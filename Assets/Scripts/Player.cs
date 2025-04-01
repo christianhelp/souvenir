@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using System;
 public class Player : MonoBehaviour
 {
     [Header("Movement")]
@@ -11,13 +12,9 @@ public class Player : MonoBehaviour
     [Header("Tag")]
     public readonly string TAG_NAME = "Player";
 
+    [Header("MetaData")]
 
-    // [Header("Audio")]
-
-    // public AudioSource audioSource;
-
-    // public AudioClip pickUpSound;
-    // public AudioClip victorySound;
+    public bool hasFuse = false;
 
 
     public CharacterController characterController;
